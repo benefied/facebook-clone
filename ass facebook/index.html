@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>facebook.com</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fa/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar expand-sm" style="background-color:darkblue;">
+            <div class="text-white">
+                <h1>facebook</h1>
+            </div>
+            <div class="navbar nav">
+                <ul class="nav nav-justify-content-end-sm">
+                    <li>
+                        <div class="text-light">Email or Phone
+                            <form action="">
+                                <input type="email">
+                            </form>
+                    </li>
+                    <li style="padding-left: 10px;">
+                        <div class="text-light">Password</div>
+                        <form action="">
+                            <input type="password">
+                        </form>
+                        <a class="text-primary" href="#">Forgotten password?</a>
+                    </li>
+                    <li style="padding-top: 25px; padding-left: 10px;">
+                        <button class=" btn-primary">log in</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="row" style="padding-top: 20px;">
+            <div class="col-sm-5 col-md-6" style="padding-top: 20px; padding-left:40px;">
+                <div class="text">
+                    <h3>Facebook helps you connect and share with people in your life</h3>
+                </div>
+                <img id="pic" class="img-fluid" src="images/samplex.jpg.png" alt="">
+            </div>
+            <div id="col" class="col-md-6 col-sm-6" style="padding-left:150px;">
+                <h1>Create an account</h1>
+                <div">
+                    <h4>its quick and easy</h4>
+                    <form data-target="col" action="">
+                    <div class="form-row form-group">
+                        <div class="col">
+                        <input class="form-control" placeholder="First name" type="text">
+                        </div>
+                        <div class="col"> 
+                        <input class="form-control" placeholder="surname" type="text">
+                        </div>
+                    </div>
+                    </form>
+                    <form action="">
+                        <input class="form-control form-group" placeholder="Mobile number or email address" type="email">
+                    </form>
+                    <form action="">
+                        <input class="form-control form-group" placeholder="New password" type="password">
+                    </form>
+                    
+                    <label class="text-dark form-group" for=""><strong>Birthday </strong></label>
+                    <form action="">
+                       <input class="form-group" type="date"> <i class="fa fa-question"></i>
+                    </form>
+                    <label for=""><strong>Gender</strong></label>
+                    <form action="">
+                        <label for="">male</label>
+                        <input type="checkbox">
+                        <label for="">female</label>
+                        <input type="checkbox">
+                        <label for="">custom</label>
+                        <input type="checkbox">
+                    </form>
+                    <div style="color:darkblue;">
+                            <small>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</small>
+                    </div>
+                    <button class="btn btn-success">Sign up</button>
+                    <div>
+                    <a href="">Create a page</a> for celebrity, band or business
+                    </div> 
+            </div>
+        </div>
+        </div>
+        <div>
+            <button id="trick" class="btn btn-dark" style="color: coral;">trick</button>
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+          $("#trick").on("click", function(){
+            $("#pic").toggle(1000);
+          }); 
+        });
+    </script>
+</body>
+
+</html>
